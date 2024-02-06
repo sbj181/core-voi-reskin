@@ -1,5 +1,5 @@
 ---
-title: About Program In Practice
+title: Advancing Patient Outcomes
 description: A basic intro to Astro.
 i18nReady: true
 type: base
@@ -7,16 +7,75 @@ type: base
 import Button from '~/components/Button.astro'
 import Progresstracker from '~/components/ProgressTracker';
 import Checkbox from '~/components/Checkbox';
+import AccordionEntry from '~/components/PageComponents/AccordionEntry.astro';
 
-<Progresstracker client:visible />
+import getRelatedResources from '~/components/getRelatedResources'
+import ResourceCard from '~/components/ResourceCard.astro'
+import ResourceBlock from '~/components/ResourceBlock.astro'
+import YouTubeEmbed from '~/components/YouTubeEmbed.astro'
 
-As an ELIQUIS field representative, there will be times when questions about the ELIQUIS 360 Support program will arise with customers. The following are common questions/scenarios and recommended responses to help you more confidently guide your customers. In most cases, the best resolution may be to refer the customer to **[1-855-ELIQUIS](tel:1-855-ELIQUIS)**.
 
-## External Resources
-Commonly used and publicly available online resources for ELIQUIS field representatives which have been approved for external use
+{/* <Progresstracker client:visible /> */}
 
-## Internal Resources
-Commonly used resources for ELIQUIS field representatives which are available for internal training use only. Do not duplicate, distribute or use when detailing
+
+<AccordionEntry 
+	
+	question="BMS contribution to innovation & advancing patient health"
+	
+>
+
+    <h3 class="answer-title">Throughout its history, BMS has made significant advancements in oncology, hematology, immunology and cardiovascular diseases. With multiple breakthroughs in these diseases with high unmet needs, BMS has helped transform patients’ lives thought substantial improvements in both life expectancy and quality of life. </h3>
+
+
+    {/* use tag name or resource title below */}
+	 <h3>Source Materials</h3>
+    <div class="resource-block-container">
+    
+   
+    {getRelatedResources([''], ['Oncology Cross Solid-Tumor Value Messages for Access & Reimbursement Stakeholders', 'BMS Website']).map(relatedResource => (
+        <ResourceBlock {...relatedResource} />
+    ))}
+    </div>
+
+
+</AccordionEntry>
+
+<AccordionEntry 
+	
+	question="BMS is a leader in R&D, with continued investment in addressing remaining unmet needs for patients with serious diseases"
+	
+>
+
+    <h3 class="answer-title">BMS are dedicated to helping patients prevail over serious diseases through a diverse and promising pipeline and new scientific platforms. BMS invests significantly more in R&D as a proportion of revenue than the industry average, highlighting its commitment to delivering innovative new treatments. Across its pipeline, BMS has 50+ products in development, with 30+ IND applications planned from 2023-2025. </h3>
+
+    {/* use tag name or resource title below */}
+	<h3>Source Materials</h3>
+    <div class="resource-block-container">
+ 
+    
+    {getRelatedResources([''], ['Oncology Cross Solid-Tumor Value Messages for Access & Reimbursement Stakeholders']).map(relatedResource => (
+        <ResourceBlock {...relatedResource} />
+    ))}
+    </div>
+
+
+</AccordionEntry>
+
+<AccordionEntry 
+	
+	question="In the last two decades, BMS revolutionized myeloid diseases with 7 innovative products, featuring 3 first-to-market indications"
+	
+>
+
+
+    {/* use tag name or resource title below */}
+	<h3>Source Materials</h3>
+    
+    <YouTubeEmbed videoId="ZmYm-4esDgA" posterUrl="/images/resources/poster.png" />
+
+
+
+</AccordionEntry>
 
 
 <Checkbox 

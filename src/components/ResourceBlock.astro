@@ -2,6 +2,7 @@
 // This is the frontmatter section where you can import other components or scripts if needed
 
 import { Icon } from 'astro-icon'
+import Button from './Button.astro'
 
 ---
 <a class="resource-link" href={Astro.props.resourceDetailsLink}>
@@ -13,14 +14,41 @@ import { Icon } from 'astro-icon'
         </div>
       </picture>
       <div class="content-wrap">
-        <h4>{Astro.props.title} ></h4>
-        <p>{Astro.props.description}</p>
+        
+        <div class="tags">
+          {Astro.props.tags.map((tag, index) => (
+            <span>
+              <span class="tag">{tag}</span>
+              {index < Astro.props.tags.length - 1 && <span>, </span>}
+            </span>
+          ))}
+        </div>
+        <div class="blockMiddle">
+          <div>
+            <h4>{Astro.props.title} ></h4>
+            <p>{Astro.props.description}</p>
+          </div>
+          <Button variant="secondary" className="share-btn mini" href={Astro.props.BMSResourceLink}>
+            <Icon name="tabler:download" />
+          </Button>
+        </div>
       </div>
     </div>
   </div>
 </a>
   
   <style type="scss">
+    .blockMiddle {
+      display: flex;
+      gap: .5em;
+      align-items: flex-start;
+      .button {
+        margin-top: 0;
+        [astro-icon] {
+          font-size: 1.3em;
+        }
+      }
+    }
   picture {
     overflow: hidden;
     display: block;
@@ -34,7 +62,7 @@ import { Icon } from 'astro-icon'
     position: relative;
     width: 100%;
     height: 7rem;
-    filter: blur(8px) grayscale(.9) opacity(.75);
+    // filter: blur(8px) grayscale(.9) opacity(.75);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -91,9 +119,14 @@ import { Icon } from 'astro-icon'
       /* margin: 0rem 2% 2% 0rem; */
       /* max-width: 31%; */
      /*  padding: 1rem; */
-      /* border-radius: 12px; */
+      border-radius: 3px;
+      .tags {
+        font-size: var(--theme-text-xs);
+        margin: .25rem 0;
+        color: var(--theme-text-lightest);
+      }
       border: 1px solid var(--custom-maroon-50);
-      box-shadow: -2px 2px 0px var(--custom-maroon-50);
+     /*  box-shadow: -2px 2px 0px var(--custom-maroon-50); */
       transition: all 150ms ease-in-out;
       animation: fadeInUp 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
       margin: 1em .25em;
@@ -113,7 +146,7 @@ import { Icon } from 'astro-icon'
     .resource-block:hover,.resource-block:focus {
         border-color: var(--theme-accent-secondary);
         background-color: var(--theme-bg-gradient-top);
-        box-shadow: -2px 2px 0px var(--theme-accent-secondary);
+        /* box-shadow: -2px 2px 0px var(--theme-accent-secondary); */
        
     }
     /* .resource-block:hover h4, .resource-block:focus h4 {

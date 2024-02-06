@@ -22,7 +22,7 @@
 	cursor: pointer;
 	padding: 1rem 1rem 0.8rem;
 	color: var(--theme-text-lightest);
-	border-bottom-color: var(--custom-maroon-20);
+	border-bottom-color: var(--theme-accent);
 	border-bottom: 6px solid transparent;
 	margin-bottom: -6px;
 	background-color: var(--custom-white-10);
@@ -34,7 +34,7 @@
 .TabGroup .active,
 .TabGroup [aria-selected='true'] {
 	color: var(--theme-text);
-	border-bottom-color: var(--custom-dark-blue);
+	border-bottom-color: var(--theme-accent-secondary);
 	font-weight: bold;
 	background-color: var(--custom-white-25);
 }

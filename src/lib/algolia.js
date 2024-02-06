@@ -7,10 +7,20 @@ const client = algoliasearch(
   process.env.ALGOLIA_WRITE_API_KEY
 );
 
+// Import resources data
+const resourcesData = require('../data/resources.json');
+
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
 const removeMd = require("remove-markdown");
+
+// Function to find image URL from resources data
+const findImageUrl = (title) => {
+  const resource = resourcesData.resources.find(r => r.title === title);
+  return resource ? resource.imageSrc : null;
+};
+
 
 // Function to strip import statements and similar code
 const stripCodeContent = (content) => {
@@ -74,11 +84,14 @@ const data = filenames.map(filename => {
     const urlSlug = relativePath.replace(/\.mdx$/, '');
     const url = `/${urlSlug}`;
 
+    const imageUrl = findImageUrl(frontmatter.title); // Find image URL for this page
+
     const parentFolderName = path.dirname(relativePath).split(path.sep).pop().replace(/-/g, ' ');
 
     const object = {
       objectID: frontmatter.slug,
       title: frontmatter.title,
+      image: imageUrl,
       description: frontmatter.description || '', // Include the description
       content: removeMd(stripCodeContent(content)).replace(/\n/g, ""), // Strip code content and then remove Markdown
       url: url,

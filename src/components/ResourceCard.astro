@@ -6,7 +6,7 @@ import { Icon } from 'astro-icon'
 ---
 
   <div class={`resource-card ${Astro.props.width ?? 'third'} ${Astro.props.tags.join(' ')}`} data-tags={Astro.props.tags.join(',')}>  
-    <div class={`type-bar ${Astro.props.resourceType}`}>{Astro.props.resourceType}</div>
+    <div class={`type-bar ${Astro.props.resourceType.split(' ')[0]}`}>{Astro.props.resourceType}</div>
     <picture>
     <div class={`image-container ${Astro.props.imageSrc ? '' : 'icon'}`} style={Astro.props.imageSrc ? `background-image: url(${Astro.props.imageSrc});` : ''}>
       {!Astro.props.imageSrc && <Icon name={Astro.props.icon} />}
@@ -111,18 +111,28 @@ import { Icon } from 'astro-icon'
       width: 100%;
       text-align: center;
       font-weight: bold;
-      padding: 0.25rem 0;
+      padding: 0.4rem 0 .25em;
       color: var(--custom-white);
       border-top-right-radius: 6px;
       border-top-left-radius: 6px;
       text-transform: uppercase;
-      letter-spacing: .075rem;
+      letter-spacing: .015rem;
+      line-height: 1.1em;
       font-family: var(--font-heading);
       &.internal {
         background-color: var(--theme-accent-tertiary);  
       }
-      &.external {
-        background-color: var(--custom-blue);  
+      &.external, &.Advancing {
+        background-color: var(--patient-health);  
+      }
+      &.Investment {
+        background-color: var(--investment);
+      }
+      &.Role {
+        background-color: var(--role-of-pricing);
+      }
+      &.Value {
+        background-color: var(--value-of-medicines);
       }
     }
     picture {

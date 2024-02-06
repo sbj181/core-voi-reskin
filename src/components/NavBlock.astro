@@ -3,11 +3,12 @@
 import Button from '../components/Button.astro'
 import { Icon } from 'astro-icon'
 
+const { color } = Astro.props; // Destructure color prop
 ---
 
-<div  class={`nav-block ${Astro.props.width ?? 'third'}`}>
+<div  class={`nav-block ${Astro.props.width ?? 'third'}`} style={`border-color: ${color}; box-shadow: -2px 2px 0px ${color}`}>
   <div class="header-wrap">
-    <div class="icon-container">
+    <div class="icon-container" style={{ backgroundColor: color }}>
       { Astro.props.SvgComponent ? <Astro.props.SvgComponent /> : <Icon name={Astro.props.icon} /> }
     </div>
     <h3>{Astro.props.title}</h3>
@@ -15,13 +16,13 @@ import { Icon } from 'astro-icon'
 
   <p>{Astro.props.description}</p>
   
-  <a class="details-btn" href={Astro.props.resourceDetailsLink}>{Astro.props.viewDetailsButtonText} <Icon name="mdi:arrow-right"></Icon></a>
+  <a class="details-btn" href={Astro.props.resourceDetailsLink} style={{ backgroundColor: color, borderColor: color }}>{Astro.props.viewDetailsButtonText} <Icon name="mdi:arrow-right"></Icon></a>
 </div>
 
 <style type="scss" is:global>
   .nav-block-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* change 3 to the number of columns you want by default */
+    grid-template-columns: repeat(4, 1fr); /* change 3 to the number of columns you want by default */
     gap: 1em; /* adjust for desired space between cards */
   }
   
@@ -30,7 +31,7 @@ import { Icon } from 'astro-icon'
   }
   
   .nav-block-container .half {
-    grid-column: span 1;  /* This card will take up 1/2 of the space */
+    grid-column: span 2;  /* This card will take up 1/2 of the space */
   }
   
   .nav-block-container .full {
@@ -168,7 +169,7 @@ import { Icon } from 'astro-icon'
     .details-btn {
       margin-top: 15px;
       justify-content: center;
-      
+      font-size: var(--theme-text);
       
       /* styles for the details button */
     }

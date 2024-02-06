@@ -50,6 +50,7 @@ const ProgressTracker: React.FC = () => {
     return (
         <div className="progress-tracker">
         <p>Progress: {readPages.length}/{totalPages}</p>
+        <div className="bubbles">
         {Array.from({ length: totalPages }).map((_, index) => (
             <a href={`/program-in-practice/${pageOrderToSlugMapping[index]}`} key={index}>
                 <span className={readPages.includes(index + 1) ? 'read' : ''}>
@@ -60,6 +61,7 @@ const ProgressTracker: React.FC = () => {
                 </span>
             </a>  
         ))}
+        </div>
     </div>
     );
 };

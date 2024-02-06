@@ -1,5 +1,5 @@
 ---
-title: How 1-800-GROVERY Works
+title: Addressing Unmet Needs
 description: A basic intro to Astro.
 i18nReady: true
 type: base
@@ -8,12 +8,59 @@ import Button from '~/components/Button.astro'
 import PhoneInfographic from '~/components/PageComponents/PhoneInfographic.astro'
 import Progresstracker from '~/components/ProgressTracker';
 import Checkbox from '~/components/Checkbox';
+import AccordionEntry from '~/components/PageComponents/AccordionEntry.astro';
+
+import getRelatedResources from '~/components/getRelatedResources'
+import ResourceCard from '~/components/ResourceCard.astro'
+
+
 
 <Progresstracker client:visible />
 
-1-855-GROVERY can help patients and providers with common access issues. Callers will be routed to the appropriate support option depending on the issue.
+<AccordionEntry 
+	
+	question="BMS contribution to innovation & advancing patient health"
+	
+>
 
-<PhoneInfographic />
+    <h3 class="answer-title">Throughout its history, BMS has made significant advancements in oncology, hematology, immunology and cardiovascular diseases. With multiple breakthroughs in these diseases with high unmet needs, BMS has helped transform patients’ lives thought substantial improvements in both life expectancy and quality of life. </h3>
+
+The following supporting documents can be visited or downloaded by selecting below:
+
+    {/* use tag name or resource title below */}
+	 <h3>Related Resources</h3>
+    <div class="resource-card-container">
+    
+   
+    {getRelatedResources([''], ['Oncology Cross Solid-Tumor Value Messages for Access & Reimbursement Stakeholders', 'BMS Website']).map(relatedResource => (
+        <ResourceCard {...relatedResource} />
+    ))}
+    </div>
+
+
+</AccordionEntry>
+
+<AccordionEntry 
+	
+	question="BMS is a leader in R&D, with continued investment in addressing remaining unmet needs for patients with serious diseases"
+	
+>
+
+    <h3 class="answer-title">BMS are dedicated to helping patients prevail over serious diseases through a diverse and promising pipeline and new scientific platforms. BMS invests significantly more in R&D as a proportion of revenue than the industry average, highlighting its commitment to delivering innovative new treatments. Across its pipeline, BMS has 50+ products in development, with 30+ IND applications planned from 2023-2025. </h3>
+
+The following supporting documents can be visited or downloaded by selecting below:
+    {/* use tag name or resource title below */}
+	<h3>Related Resources</h3>
+    <div class="resource-card-container">
+ 
+    
+    {getRelatedResources([''], ['Oncology Cross Solid-Tumor Value Messages for Access & Reimbursement Stakeholders']).map(relatedResource => (
+        <ResourceCard {...relatedResource} />
+    ))}
+    </div>
+
+
+</AccordionEntry>
 
 <Checkbox 
 	client:visible 

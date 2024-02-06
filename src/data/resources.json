@@ -1,28 +1,50 @@
 {
   "resources": [
+    
     {
-      "resourceType": "external",
-      "imageSrc": "/images/resources/e360support-website_thumb.png",
-      "veevaCode": "432-US-2300105",
-      "icon": "mdi:web",
-      "title": "Eliquis 360 Support Website",
-      "description": "Eliquis's HCP Website, a valuable resource to l enable HCP's to learn about ELIQUIS® its indications and resources.",
-      "longDescription": "Eliquis's HCP Website, a valuable resource to l enable HCP's to learn about ELIQUIS® its indications and resources.",
-      "tags": ["Websites"],
+      "resourceType": "Advancing Patient Health",
+      "imageSrc": "/images/resources/cross-tumor.png",
+      "veevaCode": "",
+      "icon": "mdi:forward",
+      "title": "Oncology Cross Solid-Tumor Value Messages for Access & Reimbursement Stakeholders",
+      "description": "BMS has oncology products either approved or under study in 11 out of the 15 highest mortality cancers, providing valuable and impactful therapeutic alternatives for patients with the most critical needs",
+      "longDescription": "BMS has oncology products either approved or under study in 11 out of the 15 highest mortality cancers, providing valuable and impactful therapeutic alternatives for patients with the most critical needs",
+      "tags": ["Downloads"],
       "viewDetailsButtonText": "View Details",
       "shareButtonText": "Share",
-      "resourceDetailsLink": "/external-resources/websites/e360-support-website",
-      "author": "E360 Support",
+      "resourceDetailsLink": "/external-resources/downloads/cross-tumor",
+      "author": "MAx",
       "lastModified": "03/2023",
-      "BMSResourceLink": "https://www.eliquis.com/eliquis/hcp",
-      "PfizerResourceLink": "https://www.eliquis.com/eliquis/hcp/formulary-lookup",
+      "BMSResourceLink": "https://www.valuepack.bms.com/assets/valuepack/oncology/cross-tumor/pan-tumor/Oncology%20Cross%20Solid%20Tumor%20Value%20Messages%20for%20Access%20Reimbursement%20Stakeholders%20_2023-03-20.pptx",
+      "PfizerResourceLink": "https://www.valuepack.bms.com/assets/valuepack/oncology/cross-tumor/pan-tumor/Oncology%20Cross%20Solid%20Tumor%20Value%20Messages%20for%20Access%20Reimbursement%20Stakeholders%20_2023-03-20.pptx",
       "RelatedResources": {
           "tags": [""],
-          "titles": ["Fingertip Formulary Website","Online Support Provider Portal Website"]
+          "titles": ["BMS Website"]
       }
     },
     {
-      "resourceType": "external",
+      "resourceType": "Advancing Patient Health",
+      "imageSrc": "/images/resources/bms-website.png",
+      "veevaCode": "",
+      "icon": "mdi:forward",
+      "title": "BMS Website",
+      "description": "BMS has launched X products across its key therapeutic areas since its founding, which have had significant impacts on patient outcomes",
+      "longDescription": "BMS has launched X products across its key therapeutic areas since its founding, which have had significant impacts on patient outcomes",
+      "tags": ["Websites"],
+      "viewDetailsButtonText": "View Details",
+      "shareButtonText": "Share",
+      "resourceDetailsLink": "/external-resources/websites/bms-website",
+      "author": "MAx",
+      "lastModified": "03/2023",
+      "BMSResourceLink": "https://www.bms.com/patient-and-caregivers/our-medicines.html",
+      "PfizerResourceLink": "https://www.bms.com/patient-and-caregivers/our-medicines.html",
+      "RelatedResources": {
+          "tags": [""],
+          "titles": ["Oncology Cross Solid-Tumor Value Messages for Access & Reimbursement Stakeholders"]
+      }
+    },
+    {
+      "resourceType": "Advancing Patient Health",
       "imageSrc": "/images/resources/fingertip-formulary_thumb.png",
       "veevaCode": "432-US-2200105",
       "icon": "mdi:web",
@@ -43,7 +65,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Advancing Patient Health",
       "imageSrc": "/images/resources/eliquis360providerportal_thumb.png",
       "icon": "mdi:web",
       "veevaCode": "432-US-2200481",
@@ -64,7 +86,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Advancing Patient Health",
       "imageSrc": "/images/resources/eliquis-copay-card_thumb.png",
       "veevaCode": "432-US-2200454",
       "icon": "mdi:web",
@@ -85,7 +107,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Advancing Patient Health",
       "imageSrc": "/images/resources/copaycard-lookuptool.png",
       "icon": "mdi:web",
       "title": "Co-Pay Card Lookup Tool",
@@ -105,7 +127,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Advancing Patient Health",
       "imageSrc": "/images/resources/mail-order-pharmacy_thumb.png",
       "icon": "mdi:web",
       "title": "Mail Order Pharmacy",
@@ -125,7 +147,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Value of our Medicines",
       "imageSrc": "https://www.eliquis.com/eliquis/servlet/servlet.FileDownload?file=00P4z00001pn7qiEAA",
       "veevaCode": "432-US-2101430",
       "icon": "ph:download",
@@ -146,7 +168,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Value of our Medicines",
       "imageSrc": "https://www.eliquis.com/eliquis/servlet/servlet.FileDownload?file=00P4z00001pn7qTEAQ",
       "veevaCode": "432-US-2101430",
       "icon": "ph:download",
@@ -167,7 +189,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Value of our Medicines",
       "imageSrc": "/images/resources/eliquis-pi_thumb.png",
       "veevaCode": "432-US-2101430",
       "icon": "ph:download",
@@ -188,7 +210,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Role of Pricing",
       "imageSrc": "/images/resources/eliquis-medguide_thumb.png",
       "icon": "ph:download",
       "title": "Medication Guide",
@@ -208,7 +230,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Investment in Future",
       "imageSrc": "/images/resources/benefits-review-form.png",
       "veevaCode": "432-US-2300106",
       "icon": "ph:clipboard",
@@ -229,7 +251,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Investment in Future",
       "imageSrc": "",
       "icon": "ph:phone",
       "title": "Call 1-855-ELIQUIS (1-855-354-7847)",
@@ -249,7 +271,7 @@
       } 
     },
     {
-      "resourceType": "external",
+      "resourceType": "Investment in Future",
       "imageSrc": "/images/resources/eliquis-elise_thumb.png",
       "icon": "ph:chat",
       "title": "ELISE Eliquis Digital Assistant",

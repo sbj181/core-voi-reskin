@@ -19,8 +19,8 @@ const { heading, body } = Astro.props as Props;
 >
   <div class="FeedbackButton_inner">
     
-    <span>Feedback</span>
-    <Icon name="ri:feedback-line" />
+    <span>Questions?</span>
+    <Icon name="mdi:clipboard-outline" />
     <!-- <FeedbackIcon /> -->
 
   </div>
@@ -48,7 +48,7 @@ const { heading, body } = Astro.props as Props;
       }
       transition: all 150ms ease-in;
       &:focus, &:hover {
-        background-color: var(--custom-green-90);
+        background-color: var(--theme-accent-secondary);
        /*  box-shadow: 2px 2px 4px var(--custom-grey-1-50);
         transform: translateY(-2px); */
       }

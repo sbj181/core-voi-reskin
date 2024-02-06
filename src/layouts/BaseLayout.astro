@@ -221,9 +221,7 @@ if (isFallback) canonicalURL.pathname = canonicalURL.pathname.replace(`/${lang}/
 		<OfflineStatusWidget/>
 		<!-- <ReloadPrompt /> -->
 
-		{import.meta.env.PUBLIC_FEATURE_CHAT=="true" &&
-			<ChatWidget/>
-		}
+		
 		{import.meta.env.PUBLIC_FEATURE_SPLASH_ANIMATION=="true" &&
 			<SplashAnimation/>
 		}

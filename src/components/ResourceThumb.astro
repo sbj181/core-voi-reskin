@@ -10,8 +10,9 @@ const currentResource = resources.resources.find(r => r.imageSrc === Astro.props
 <div class="thumbnail-wrapper">
     <div class="thumbnail">
        <!-- Display the resource type bar -->
-       <div class={`type-bar ${currentResource?.resourceType}`}>{currentResource?.resourceType}</div>
-        
+       <div class={`type-bar ${currentResource?.resourceType.split(' ')[0]}`}>
+        {currentResource?.resourceType}
+    </div>
         <div class="thumb-icon-wrap">
             {Astro.props.imgSrc ? (
                 <div class="image-container">
@@ -56,14 +57,25 @@ const currentResource = resources.resources.find(r => r.imageSrc === Astro.props
       font-weight: bold;
       padding: 0.25rem 0;
       color: var(--custom-white);
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
       text-transform: uppercase;
       letter-spacing: .15rem;
       font-family: var(--font-heading);
       &.internal {
-        background-color: var(--custom-maroon);  
+        background-color: var(--theme-accent-tertiary);  
       }
-      &.external {
-        background-color: var(--custom-dark-blue);  
+      &.external, &.Advancing {
+        background-color: var(--patient-health);  
+      }
+      &.Investment {
+        background-color: var(--investment);
+      }
+      &.Role {
+        background-color: var(--role-of-pricing);
+      }
+      &.Value {
+        background-color: var(--value-of-medicines);
       }
     }
     .code {
@@ -100,7 +112,7 @@ const currentResource = resources.resources.find(r => r.imageSrc === Astro.props
         }
         img {
             background-color: var(--custom-grey-1-50);
-            box-shadow: 3px 3px 6px var(--custom-grey-1-50);
+            box-shadow: 2px 2px 6px var(--custom-grey-1-20);
             flex: 1;
             max-width: 100%;
             max-height: 100%;

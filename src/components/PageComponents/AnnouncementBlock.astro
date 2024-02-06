@@ -13,7 +13,7 @@ const { announcement, icon } = Astro.props as Props;
 <div class='AnnouncementBlock' style={`--box-icon-url: url('/tutorial/${icon?icon:"check-list"}.svg');`}>
   <div class="header">
     <div class="icon">
-      <svg id="Group_1957" data-name="Group 1957" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.186" height="34.185" viewBox="0 0 34.186 34.185">
+      <!-- <svg id="Group_1957" data-name="Group 1957" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.186" height="34.185" viewBox="0 0 34.186 34.185">
         <defs>
           <clipPath id="clip-path">
             <rect id="Rectangle_204" data-name="Rectangle 204" width="34.186" height="34.185" transform="translate(0 0)" fill="none"/>
@@ -24,7 +24,8 @@ const { announcement, icon } = Astro.props as Props;
           <rect id="Rectangle_202" data-name="Rectangle 202" width="3.417" height="10.255" transform="translate(15.383 5.128)" fill="#f26937"/>
           <rect id="Rectangle_203" data-name="Rectangle 203" width="3.417" height="3.42" transform="translate(15.383 18.8)" fill="#f26937"/>
         </g>
-      </svg>      
+      </svg>       -->
+      <Icon name="mdi:announcement" />
     </div>
     <h3>What's New</h3>
   </div>
@@ -46,7 +47,7 @@ const { announcement, icon } = Astro.props as Props;
      border: 1px solid var(--theme-accent);
      /* box-shadow: -0.5rem 0.5rem 0 -1px var(--theme-accent); */
      /* background-color: var(--theme-bg); */
-     background-color: var(--theme-bg-gradient-bottom);
+     background-color: var(--theme-bg-gradient-top);
 
       .header{
         //padding-inline-start: 4rem;

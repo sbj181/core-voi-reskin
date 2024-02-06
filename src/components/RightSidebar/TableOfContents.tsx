@@ -23,8 +23,7 @@ const TableOfContents = ({ toc = [], labels, isMobile }: Props) => {
 	const Container = ({ children }: { children: ComponentChildren }) => {
 		return isMobile ? (
 			<details
-				{...{ open }}
-				onToggle={(e: JSX.TargetedEvent<HTMLDetailsElement>) => setOpen(e.currentTarget.open)}
+				
 				className="toc-mobile-container"
 			>
 				{children}

@@ -43,7 +43,7 @@ const manualTitle = content.manualTitle;
 	<article id="article" class="content">
 		<section class="main-section">
 			<header>
-				<Breadcrumbs indexText="Home">
+				<!-- <Breadcrumbs indexText="Home">
 				
 					<svg
 						slot="separator"
@@ -59,7 +59,7 @@ const manualTitle = content.manualTitle;
 						><polyline points="9 18 15 12 9 6"></polyline>
 					</svg>
 				
-				</Breadcrumbs>
+				</Breadcrumbs> -->
 				<slot name="before-title" />
 				{!manualTitle &&
 					<h1 class="content-title" id="overview" set:html={title} />
@@ -189,9 +189,9 @@ const manualTitle = content.manualTitle;
 	}
 	.content-title {
 		font-family: var(--font-heading);
-		padding: 0 0 1rem 0;
-		border-bottom: 1px solid var(--custom-grey-1-50);
-		margin-bottom: 2rem;
+		padding: 0 0 0rem 0;
+		/* border-bottom: 2px solid var(--theme-text-lightest); */
+		/* margin-bottom: 2rem; */
 		/*font-size: 2rem;*/
 		max-width: 100%;
 	}

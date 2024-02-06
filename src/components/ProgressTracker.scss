@@ -3,21 +3,31 @@
     gap: .25em;
     padding: 1em .5em;
     p {
+        font-size: 1.5em;
+        color: var(--patient-health);
         margin-right: auto;
         line-height: 1.4;
         display: none;
     }
     @media (min-width: 52em) {
-        padding: 1em;
+        padding: 1em 1em 1.5em;
         gap: .5em;
         p {
             display: block;
+            width: 100%;
+            text-align: center;
         }
     }
     align-items: center;
     justify-content: space-between;
-   
-    border: 1px solid var(--custom-grey-1-50);
+   flex-direction: column;
+   .bubbles {
+    display: flex;
+    width: 100%;
+    padding: 0 10%;
+    justify-content: space-around;
+   }
+    border: 2px dashed var(--patient-health-50);
     // background-color: var(--custom-white-50);
     background-color: var(--theme-bg-gradient-top);
 
@@ -34,41 +44,45 @@
     a {
         text-decoration: none;
         
-        &:hover {
-            span {
-                border-color: var(--theme-accent-tertiary);
-            }
-        }
+       
     }
 }
 
 .progress-tracker span {
-    width: 25px;
-    height: 25px;
-    font-size: var(--theme-text-xs);
-    color: var(--theme-accent-tertiary);
+    width: 60px;
+    height: 60px;
+    font-size: 2.4em;
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+    /* font-size: var(--theme-text-lg); */
+    color: var(--patient-health);
     @media (min-width: 30em) {
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
     }
-    @media (min-width: 52em) {
-        width: 60px;
-        height: 60px;
-    }
+    /* @media (min-width: 52em) {
+        width: 120px;
+        height: 120px;
+    } */
     transition: all .1s ease-in;
     border-radius: 50%;
     background-color: var(--custom-white-10);
     /* background-color: var(--custom-white); */
-    border: 1px solid var(--custom-orange-50);
+    border: 2px solid var(--patient-health);
+    box-shadow: -2px 2px 0px var(--patient-health);
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .progress-tracker span.read {
-    background-color: var(--custom-orange);
-    border: 1px solid var(--custom-orange-50);
+    background-color: var(--patient-health);
+    border: 1px solid var(--patient-health-50);
     color: var(--custom-white);
+    
 }
 
 .checkbox-container {
@@ -78,7 +92,7 @@
 .checkbox-container {
     position: relative;
     border-radius: 6px;
-    border: 1px solid var(--custom-grey-1-50);
+    border: 2px solid var(--patient-health);
     /* background-color: var(--custom-white-50); */
     background-color: var(--theme-bg-gradient-top);
     transition: all .1s ease-in;
@@ -86,10 +100,10 @@
     /* box-shadow: -2px 2px 0px var(--custom-maroon-50); */
     transition: all .1s ease-in;
     &:hover {
-        border: 1px solid var(--custom-maroon-50);
+        border: 2px solid var(--patient-health-75);
         /* box-shadow: -2px 2px 0px var(--custom-maroon); */
         label {
-            color: var(--theme-text);
+            
         }
     }
 }
@@ -102,7 +116,8 @@
     display: inline-block;
     line-height: 1.4; /* Adjust as needed */
     font-family: var(--font-heading);
-    color: var(--theme-text-light);
+    color: var(--patient-health);
+    font-weight: 700;
 }
 
 .checkbox-container input[type='checkbox'] {
@@ -119,10 +134,10 @@
     transform: translateY(-50%);
     width: 25px; /* Adjust as needed */
     height: 25px; /* Adjust as needed */
-    border: 2px solid var(--custom-grey-1);
+    border: 2px solid var(--patient-health);
     border-radius: 5px; /* Rounded corners */
     background-color: #fff;
-    box-shadow: -2px 2px 0px var(--custom-grey-1-50);
+    box-shadow: -2px 2px 0px var(--patient-health);
 }
 
 .checkbox-container label:active::before {
@@ -136,9 +151,9 @@
 
 /* Custom appearance when checked */
 .checkbox-container input[type='checkbox']:checked + label::before {
-    background-color: var(--custom-orange); /* Change to desired color */
-    border-color: var(--custom-orange-50); /* Change to desired color */
-    box-shadow: -2px 2px 0px var(--custom-orange-50);
+    background-color: var(--patient-health); /* Change to desired color */
+    border-color: var(--patient-health); /* Change to desired color */
+    box-shadow: -2px 2px 0px var(--patient-health-50);
 }
 
 /* Checkbox tick (check) using Unicode character */

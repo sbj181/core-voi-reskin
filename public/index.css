@@ -150,7 +150,7 @@ h2 {
 }
 
 h1 {
-	font-size: 2rem; /* 40px */
+	font-size: 2.4rem; /* 40px */
 	font-weight: 900;
 }
 
@@ -603,6 +603,10 @@ a.current-header-link {
 html {
 	/* Mobile TOC is displayed above page content */
 	scroll-padding-top: calc(1.5rem + var(--theme-navbar-height) + var(--theme-mobile-toc-height));
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-weight: 400;
 }
 
 @media (min-width: 72em) {
