@@ -45,7 +45,28 @@
     },
     {
       "resourceType": "Advancing Patient Health",
-      "imageSrc": "/images/resources/fingertip-formulary_thumb.png",
+      "imageSrc": "/images/resources/poster.png",
+      "veevaCode": "",
+      "icon": "mdi:video",
+      "title": "Myeloid Messaging Platform",
+      "description": "For background/training purposes only for Market Access, GMs and Medical. Not for use in promotion. Any communications developed for external use are subject to local medical, regulatory and legal review prior to use.",
+      "longDescription": "For background/training purposes only for Market Access, GMs and Medical. Not for use in promotion. Any communications developed for external use are subject to local medical, regulatory and legal review prior to use.",
+      "tags": ["Videos"],
+      "viewDetailsButtonText": "Watch Video",
+      "shareButtonText": "Share",
+      "resourceDetailsLink": "/external-resources/downloads/cross-tumor",
+      "author": "MAx",
+      "lastModified": "03/2023",
+      "BMSResourceLink": "https://www.valuepack.bms.com/assets/valuepack/oncology/cross-tumor/pan-tumor/Oncology%20Cross%20Solid%20Tumor%20Value%20Messages%20for%20Access%20Reimbursement%20Stakeholders%20_2023-03-20.pptx",
+      "PfizerResourceLink": "https://www.valuepack.bms.com/assets/valuepack/oncology/cross-tumor/pan-tumor/Oncology%20Cross%20Solid%20Tumor%20Value%20Messages%20for%20Access%20Reimbursement%20Stakeholders%20_2023-03-20.pptx",
+      "RelatedResources": {
+          "tags": [""],
+          "titles": ["BMS Website"]
+      }
+    },
+    {
+      "resourceType": "Advancing Patient Health",
+      "imageSrc": "/images/resources/fpo-image2.png",
       "veevaCode": "432-US-2200105",
       "icon": "mdi:web",
       "title": "Fingertip Formulary Website",
@@ -66,7 +87,7 @@
     },
     {
       "resourceType": "Advancing Patient Health",
-      "imageSrc": "/images/resources/eliquis360providerportal_thumb.png",
+      "imageSrc": "/images/resources/fpo-image.png",
       "icon": "mdi:web",
       "veevaCode": "432-US-2200481",
       "title": "Online Support Provider Portal Website",
@@ -87,7 +108,7 @@
     },
     {
       "resourceType": "Advancing Patient Health",
-      "imageSrc": "/images/resources/eliquis-copay-card_thumb.png",
+      "imageSrc": "/images/resources/fpo-image.png",
       "veevaCode": "432-US-2200454",
       "icon": "mdi:web",
       "title": "Co-Pay and Free Trial Offers Eligibility",
@@ -108,7 +129,7 @@
     },
     {
       "resourceType": "Advancing Patient Health",
-      "imageSrc": "/images/resources/copaycard-lookuptool.png",
+      "imageSrc": "/images/resources/fpo-image.png",
       "icon": "mdi:web",
       "title": "Co-Pay Card Lookup Tool",
       "description": "Search for your co-pay card ID or activate a free trial offer",
@@ -148,7 +169,7 @@
     },
     {
       "resourceType": "Value of our Medicines",
-      "imageSrc": "https://www.eliquis.com/eliquis/servlet/servlet.FileDownload?file=00P4z00001pn7qiEAA",
+      "imageSrc": "/images/resources/fpo-image2.png",
       "veevaCode": "432-US-2101430",
       "icon": "ph:download",
       "title": "NVAF Hospital Discharge Kit & Discharge Planning Checklist",
@@ -169,7 +190,7 @@
     },
     {
       "resourceType": "Value of our Medicines",
-      "imageSrc": "https://www.eliquis.com/eliquis/servlet/servlet.FileDownload?file=00P4z00001pn7qTEAQ",
+      "imageSrc": "/images/resources/fpo-image.png",
       "veevaCode": "432-US-2101430",
       "icon": "ph:download",
       "title": "VTE Hospital Discharge Kit & Discharge Planning Checklist",

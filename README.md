@@ -5,10 +5,7 @@
 
 ### Server Links
 * Local: http://127.0.0.1:3000/
-* Staging: https://core-template-staging.netlify.app/
-* Live: https://core-rms.com
-* Netlify: https://app.netlify.com/sites/grovery-core-toolkit-template/overview
-
+* Staging: https://groverycore.netlify.app/
 
 ---
 
@@ -106,7 +103,7 @@ Includes the following variables in .env locally, as well as in the [Netlify Env
 * ALGOLIA_APP_ID="XXXXXXXX"
 * ALGOLIA_SEARCH_ONLY_API_KEY="XXXXXXXXXXXXXXXXXXXXXXX"
 * ALGOLIA_WRITE_API_KEY="XXXXXXXXXXXXXXXXXXXXXXX"
-* ALGOLIA_INDEX_NAME=core-eliquis
+* ALGOLIA_INDEX_NAME=core-voi
 
 Recommended to delete / clear out index before running command or else you will get duplicates  
 

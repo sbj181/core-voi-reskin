@@ -20,7 +20,7 @@ export default [
 	{ text: 'Meeting Prep', header: true, type: 'learn', key: 'meeting-prep' },
 		{ text: 'Conference X', slug: 'meeting-prep/asco-conference', key: 'ASCO-Conference' },
 
-	{ text: 'Advancing Patient Health', header: true, type: 'learn', key: 'program-in-practice' },
+	{ text: 'Leadership Academy', header: true, type: 'learn', key: 'program-in-practice' },
 		{ text: 'BMS contribution to innovation & advancing patient outcomes', slug: 'program-in-practice/about-program-in-practice', key: 'about-program-in-practice' },
 		{ text: 'BMS is a leader in R&D, with continued investment in addressing remaining unmet needs for patients with serious diseases', slug: 'program-in-practice/how-1-855-eliquis-works', key: 'how-1-855-eliquis-works' },
 /* 		{ text: 'BMS has a wide footprint, with facilities, employees and research activities across many countries', slug: 'program-in-practice/provider-expresses-that-patient-is-concerned-about-high-out-of-pocket-costs', key: 'provider-expresses-that-patient-is-concerned-about-high-out-of-pocket-costs ' },
@@ -29,7 +29,7 @@ export default [
 		{ text: 'Co-pay Backdate Request', slug: 'program-in-practice/co-pay-backdate-request', key: 'co-pay-backdate-request' },
 		{ text: 'Provider Expresses That Patient Unaware Of Co-pay Program And/or Hasn’t Been Using Co-pay Card', slug: 'program-in-practice/provider-expresses-that-patient-unaware-of-co-pay-program-andor-hasnt-been-using-co-pay-card', key: 'provider-expresses-that-patient-unaware-of-co-pay-program-andor-hasnt-been-using-co-pay-card' },
 		{ text: 'Mail-Order Pharmacy', slug: 'program-in-practice/mail-order-pharmacy', key: 'mail-order-pharmacy' }, */
-	{ text: 'Value of our Medicines', header: true, type: 'learn', key: 'value-of-medicine' },
+	/* { text: 'Value of our Medicines', header: true, type: 'learn', key: 'value-of-medicine' },
 		{ text: 'BMS contribution to innovation & advancing patient outcomes', slug: 'program-in-practice/about-program-in-practice', key: 'about-program-in-practice' },
 		{ text: 'BMS is a leader in R&D, with continued investment in addressing remaining unmet needs for patients with serious diseases', slug: 'program-in-practice/how-1-855-eliquis-works', key: 'how-1-855-eliquis-works' },
 	{ text: 'Role of Pricing', header: true, type: 'learn', key: 'role-of-pricing' },
@@ -37,7 +37,7 @@ export default [
 		{ text: 'BMS is a leader in R&D, with continued investment in addressing remaining unmet needs for patients with serious diseases', slug: 'program-in-practice/how-1-855-eliquis-works', key: 'how-1-855-eliquis-works' },
 	{ text: 'Investment in Future', header: true, type: 'learn', key: 'investment-in-future' },
 		{ text: 'BMS contribution to innovation & advancing patient outcomes', slug: 'program-in-practice/about-program-in-practice', key: 'about-program-in-practice' },
-		{ text: 'BMS is a leader in R&D, with continued investment in addressing remaining unmet needs for patients with serious diseases', slug: 'program-in-practice/how-1-855-eliquis-works', key: 'how-1-855-eliquis-works' },
+		{ text: 'BMS is a leader in R&D, with continued investment in addressing remaining unmet needs for patients with serious diseases', slug: 'program-in-practice/how-1-855-eliquis-works', key: 'how-1-855-eliquis-works' }, */
 	/* { text: 'Terms & Conditions', header: true, type: 'learn', key: 'terms-and-conditions' },
 		{ text: 'Co-pay Terms and Conditions and Eligibility Requirements for Patients', slug: 'terms-and-conditions/co-pay-terms-and-conditions-and-eligibility-requirements-for-patients', key: 'co-pay-terms-and-conditions-and-eligibility-requirements-for-patients' },
 		{ text: 'FTO Terms and Conditions and Eligibility Requirements for Patients', slug: 'terms-and-conditions/fto-terms-and-conditions-and-eligibility-requirements-for-patients', key: 'fto-terms-and-conditions-and-eligibility-requirements-for-patients' },
@@ -55,7 +55,7 @@ export default [
 
  */
 	{ text: 'Advancing Patient Health', header: true, type: 'api', key: 'external-resources' },
-		{ text: 'External Resources Overview', slug: 'external-resources/external-resources-overview', key: 'external-resources/external-resources-overview' },
+		{ text: 'All Source Materials', slug: 'external-resources/external-resources-overview', key: 'external-resources/external-resources-overview' },
 		{ text: 'Websites', slug: 'external-resources/websites', key: 'external-resources/websites' },
 		{ text: 'Downloads', slug: 'external-resources/downloads', key: 'external-resources/downloads' },
 		{ text: 'Forms', slug: 'external-resources/forms', key: 'external-resources/forms' },
